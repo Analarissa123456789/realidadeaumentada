@@ -1,0 +1,14 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js">
+</script>
+<script
+src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL =
+'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+		<a-box position='0 0.5 0' material='apacity: 0.5;'></a-box>
+		<a-marker-camera present='hiro'>
+      <a-image position=”0 0.2 0″ rotation=”270 0 0″ height=”1″ width=”1″ src=”imagem1.png”></a-image>
+    </a-marker-camera>
+	</a-scene>
+</body>
